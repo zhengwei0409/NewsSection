@@ -80,7 +80,7 @@ public class News {
             }
 
             // Using buble sort to sort the news from latest to oldest
-            for(int i = 0; i < arr.size(); i++) {
+            for(int i = 0; i < arr.size() - 1; i++) {
                 for(int j = 0; j < arr.size() - i - 1; j++) {
                     if(datesList.get(j+1).after(datesList.get(j))) {
                         ArrayList<Date> datesListTemp = new ArrayList<Date>();
